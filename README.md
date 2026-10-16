@@ -1,4 +1,4 @@
-# Aurelia jewelry store (initial build)
+# TgH jewelry store (initial build)
 
 This is a small, self-contained full-stack starter for the jewelry store modules in `Modules_with_Functions.xlsx`. It uses Node.js built-in modules and browser JavaScript, so there are no package dependencies to install.
 
@@ -32,4 +32,5 @@ On the first run the server generates an admin password, prints it in the termin
 ## Customize the store
 
 Use **Store admin → Store content** to change the brand name, announcement, homepage copy and hero image, story section, contact email, currency symbol, footer text, and policy pages. Use **Products** to change product names, descriptions, collections, prices, metal and gemstone details, sizes, stock, visibility, and images. Product/category edits are saved to the store data automatically.
+
 
