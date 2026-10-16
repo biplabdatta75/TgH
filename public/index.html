@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef"><meta name="description" content="Considered jewelry for everyday and every occasion.">
+  <title>Aurelia — considered jewelry</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement" id="announcement"></div>
+  <header class="site-header">
+    <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <a class="wordmark" href="#top" id="brandName">Aurelia</a>
+    <nav class="main-nav" id="mainNav"><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#story">Our story</a><a href="#reviews">Reviews</a></nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="icon-button account-toggle" id="accountToggle" aria-label="Account">♙</button>
+      <button class="icon-button wishlist-toggle" id="wishlistToggle" aria-label="Wishlist">♡<span id="wishCount" class="tiny-count">0</span></button>
+      <button class="icon-button cart-toggle" id="cartToggle" aria-label="Shopping bag">Bag <span id="cartCount" class="tiny-count">0</span></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero" id="hero">
+      <img class="hero-photo" id="heroImage" alt="Jewelry collection">
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><p class="eyebrow" id="heroEyebrow"></p><h1 id="heroTitle"></h1><p id="heroText" class="hero-text"></p><a class="button button-dark" id="heroButton" href="#shop"></a></div>
+      <div class="hero-index"><span>01</span><i></i><span>03</span></div>
+    </section>
+
+    <section class="trust-strip"><span>✧ Thoughtful materials</span><span>✧ Made for everyday</span><span>✧ Insured delivery</span><span>✧ Considered packaging</span></section>
+
+    <section class="section collection-section" id="collections">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR EVERYDAY FAVORITE</p><h2>Shop by collection</h2></div><a class="text-link" href="#shop">View all pieces <span>↗</span></a></div>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </section>
+
+    <section class="section products-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">DESIGNED TO BE WORN</p><h2>Pieces to keep close</h2><p class="section-intro">Small details. Beautiful materials. Made to become part of your story.</p></div><div class="product-controls"><select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="newest">Newest</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="popular">Most loved</option></select></div></div>
+      <div class="shop-toolbar"><div class="category-pills" id="categoryPills"></div><button class="filter-button" id="filterToggle">Filters <span>＋</span></button></div>
+      <div class="filters-panel" id="filtersPanel" hidden><label>Price up to <input type="range" id="priceFilter" min="0" max="30000" step="500" value="30000"><output id="priceOutput">₹30,000</output></label><label>Material <select id="materialFilter"><option value="">All materials</option></select></label><label>Gemstone <select id="gemFilter"><option value="">All stones</option></select></label><label class="stock-filter"><input type="checkbox" id="inStockFilter"> In stock only</label><button class="text-button" id="clearFilters">Clear all</button></div>
+      <div class="product-grid" id="productGrid"></div><p class="empty-state" id="emptyProducts" hidden>No pieces match those filters. Try clearing some filters.</p>
+      <div class="center-action"><button class="button button-outline" id="loadMore">Load more pieces</button></div>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-image"><img src="/assets/story.svg" alt="Jewelry craft details"></div><div class="story-copy"><p class="eyebrow">THE AURELIA POINT OF VIEW</p><h2 id="storyTitle"></h2><p id="storyText"></p><a class="text-link" href="#footer">Get to know us <span>↗</span></a></div></section>
+
+    <section class="section reviews-section" id="reviews"><div class="section-heading"><div><p class="eyebrow">NOTES FROM YOU</p><h2>Worn and loved</h2></div><button class="text-link" id="writeReview">Write a review <span>↗</span></button></div><div class="review-grid" id="reviewGrid"></div></section>
+
+    <section class="newsletter"><div><p class="eyebrow">A LITTLE NOTE FROM US</p><h2>Good things, occasionally.</h2><p>New pieces, care notes, and stories from the studio.</p></div><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="Your email address" required><button type="submit" class="button button-light">Sign me up</button></form></section>
+  </main>
+  <footer class="site-footer" id="footer"><div class="footer-brand"><a class="wordmark" href="#top" id="footerBrand">Aurelia</a><p id="footerText"></p></div><div><h3>Explore</h3><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#story">Our story</a></div><div><h3>We're here</h3><a id="contactLink" href="mailto:hello@example.com">Contact us</a><a href="#footer" data-policy="shippingPolicy">Shipping & delivery</a><a href="#footer" data-policy="returnsPolicy">Returns & exchanges</a><a href="#footer" data-policy="carePolicy">Jewelry care</a><a href="#footer" data-policy="privacyPolicy">Privacy</a><a href="#footer" data-policy="termsPolicy">Terms</a></div><div class="footer-bottom"><span>© <span id="year"></span> <span id="footerBrandText">Aurelia</span>. Made with care.</span><a href="/admin.html">Store admin</a></div></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="side-drawer" id="cartDrawer" aria-label="Shopping bag"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawerCartCount"></span></h2></div><button class="close-button" data-close="cartDrawer" aria-label="Close">×</button></div><div class="drawer-content" id="cartLines"></div><div class="drawer-foot" id="cartFooter"></div></aside>
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist"><div class="drawer-head"><div><p class="eyebrow">THE PIECES YOU LOVE</p><h2>Your wishlist</h2></div><button class="close-button" data-close="wishlistDrawer" aria-label="Close">×</button></div><div class="drawer-content" id="wishlistLines"></div><div class="drawer-foot"><button class="button button-outline full-width" id="shareWishlist">Share my jewelry list ↗</button></div></aside>
+  <aside class="side-drawer" id="accountDrawer" aria-label="Your account"><div class="drawer-head"><div><p class="eyebrow">YOUR AURELIA ACCOUNT</p><h2 id="accountHeading">Sign in</h2></div><button class="close-button" data-close="accountDrawer" aria-label="Close">×</button></div><div class="drawer-content" id="accountContent"></div></aside>
+
+  <div class="modal-backdrop" id="modalBackdrop"><section class="modal" id="modal"><button class="close-button modal-close" id="modalClose" aria-label="Close">×</button><div id="modalBody"></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
+

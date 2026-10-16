@@ -1,0 +1,40 @@
+{
+  "content": {
+    "brandName": "Aurelia",
+    "announcement": "Complimentary insured shipping on orders over ₹10,000",
+    "heroEyebrow": "JEWELRY MADE TO BE KEPT",
+    "heroTitle": "A little brilliance, every day.",
+    "heroText": "Thoughtful pieces in gold, silver, and natural stones. Made for your moments, and the ones still to come.",
+    "heroButton": "Explore the collection",
+    "heroImage": "/assets/hero.svg",
+    "storyTitle": "Made with care. Chosen by you.",
+    "storyImage": "/assets/story.svg",
+    "storyText": "We believe the pieces you wear should feel personal. Each design is made with carefully chosen materials and considered details, ready to become part of your story.",
+    "contactEmail": "hello@example.com",
+    "currency": "INR",
+    "currencySymbol": "₹",
+    "footerText": "Considered jewelry for everyday and every occasion.",
+    "shippingPolicy": "Insured shipping is complimentary on orders over ₹10,000. The store team will confirm the delivery estimate after reviewing your order.",
+    "returnsPolicy": "Contact the store within 7 days of delivery to ask about an unworn item's return or exchange. Custom and engraved pieces may have different terms.",
+    "carePolicy": "Keep jewelry away from perfume, lotions, chlorine, and harsh cleaners. Store pieces separately and wipe gently with a soft cloth after wearing.",
+    "privacyPolicy": "We use the information you provide to process orders and respond to your requests. This starter site stores order and account information locally on the store server.",
+    "termsPolicy": "Product availability, delivery timing, and final payment arrangements are confirmed by the store team. Product images and colors may vary slightly by screen."
+  },
+  "products": [
+    {"id":"aurora-ring","title":"Aurora signet ring","description":"A softly sculpted signet with a luminous oval stone. Made to feel like yours from the very first wear.","category":"Rings","collection":"The Heirloom Edit","price":12900,"compareAt":0,"material":"18k recycled gold","purity":"18k","gemstone":"Moonstone","shape":"Oval","sizeOptions":["US 5","US 6","US 7","US 8"],"stock":8,"image":"/assets/ring.svg","featured":true,"status":"published","createdAt":"2026-10-01T10:00:00.000Z"},
+    {"id":"solstice-pendant","title":"Solstice pendant","description":"A delicate sun-inspired pendant with a warm golden finish. An easy layer for every day.","category":"Necklaces","collection":"Golden Hour","price":8900,"compareAt":9900,"material":"18k gold vermeil","purity":"18k vermeil","gemstone":"Citrine","shape":"Round","sizeOptions":["16 in","18 in","20 in"],"stock":12,"image":"/assets/pendant.svg","featured":true,"status":"published","createdAt":"2026-09-20T10:00:00.000Z"},
+    {"id":"tide-earrings","title":"Tide drop earrings","description":"Polished drops inspired by water in motion. Light-catching curves with a comfortable, balanced feel.","category":"Earrings","collection":"The Heirloom Edit","price":7600,"compareAt":0,"material":"Sterling silver","purity":"925 silver","gemstone":"Blue topaz","shape":"Pear","sizeOptions":["One size"],"stock":6,"image":"/assets/earrings.svg","featured":true,"status":"published","createdAt":"2026-09-12T10:00:00.000Z"},
+    {"id":"petal-bracelet","title":"Petal chain bracelet","description":"A fine chain punctuated with petite floral details. Adjusts easily for a close, comfortable fit.","category":"Bracelets","collection":"Golden Hour","price":6800,"compareAt":0,"material":"14k gold fill","purity":"14k gold fill","gemstone":"White sapphire","shape":"Round","sizeOptions":["6.5 in","7 in","7.5 in"],"stock":15,"image":"/assets/bracelet.svg","featured":true,"status":"published","createdAt":"2026-09-05T10:00:00.000Z"},
+    {"id":"mira-studs","title":"Mira stone studs","description":"Small, sculptural studs with a soft blush stone. Designed to pair with everything.","category":"Earrings","collection":"Little Treasures","price":5400,"compareAt":0,"material":"Sterling silver","purity":"925 silver","gemstone":"Rose quartz","shape":"Round","sizeOptions":["One size"],"stock":20,"image":"/assets/earrings.svg","featured":false,"status":"published","createdAt":"2026-08-28T10:00:00.000Z"},
+    {"id":"orbit-chain","title":"Orbit layering chain","description":"A refined everyday chain with a tiny orbit charm. Wear alone or build your own layers.","category":"Necklaces","collection":"Little Treasures","price":6200,"compareAt":0,"material":"18k gold vermeil","purity":"18k vermeil","gemstone":"None","shape":"Round","sizeOptions":["16 in","18 in","20 in"],"stock":11,"image":"/assets/pendant.svg","featured":false,"status":"published","createdAt":"2026-08-14T10:00:00.000Z"}
+  ],
+  "promotions": [{"code":"WELCOME10","type":"percent","value":10,"minimum":0,"active":true}],
+  "orders": [],
+  "customers": [],
+  "reviews": [
+    {"id":"review-aurora-1","productId":"aurora-ring","name":"Maya R.","rating":5,"text":"The stone catches the light beautifully. The sizing guide was very helpful.","status":"approved","createdAt":"2026-09-30T12:00:00.000Z"},
+    {"id":"review-pendant-1","productId":"solstice-pendant","name":"Nina S.","rating":5,"text":"Lovely quality and even prettier in person.","status":"approved","createdAt":"2026-09-22T12:00:00.000Z"}
+  ],
+  "activity": []
+}
+
